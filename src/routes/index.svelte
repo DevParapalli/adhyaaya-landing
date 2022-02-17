@@ -1,6 +1,7 @@
 <script lang="ts">
     import { browser, dev } from '$app/env';
     import Footer from '$lib/Nav/Footer.svelte';
+import Navbar from '$lib/Nav/Navbar.svelte';
     import { frame_data } from './index_data';
 
     let app;
@@ -62,6 +63,8 @@
 
 <svelte:window bind:scrollY bind:innerHeight bind:innerWidth />
 
+<Navbar />
+
 <div class="app ">
     <!--Adding a bg to this would make it the background for the slideshow thingy-->
     <div id="bound-one" bind:this="{container}" class="scroll-bound snap-none">
@@ -84,15 +87,39 @@
             </div>
         </div>
     </div>
-    <Footer />
+    <div class="content-div"><span>CONTENT 1</span></div>
+    <div class="content-div"><video src="/city-bg.mp4" autoplay muted loop class="h-screen w-screen object-cover"></video></div>
+    <div class="content-div"><span>CONTENT 3</span></div>
+    <div class="content-div"><Footer /></div>
 </div>
 
 <style lang="scss">
+    .content-div {
+        display: flex;
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #0f0c29;
+        span {
+            color: white;
+        }
+
+        video {
+            object-fit: cover;
+            width: 100vw;
+            height: 100vh;
+        }
+    }
     .w-full {
         width: 100%;
     }
     .scroll-bound {
         height: 600vh;
+        background-color: black;
 
         .content {
             height: 100vh;
@@ -121,6 +148,8 @@
         align-items: center;
         top: 0;
         color: white;
+        transition-property: all; 
+        transition-duration: 200ms; 
         .subtitle {
             //opacity: 0;
             font-size: 30px;
@@ -146,5 +175,5 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-
 </style>
+
