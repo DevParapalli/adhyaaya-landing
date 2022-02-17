@@ -38,7 +38,7 @@
 			<!-- Adhyaaya main logo -->
 
 			<div class="logo  ">
-				<img src="https://ca.adhyaaya.org/assets/img/adhyaaya_logo.png" alt="Logo" />
+				<img src="/favicon.png" alt="Logo" />
 			</div>
 
 			<!-- Icons part 2  -->
@@ -100,8 +100,8 @@
 							<!-- <div class="ani"></div> -->
 						</h1>
 						<ul>
-							<li><a href="#" class="button" on:click={termspop4}>Contact info</a></li>
-							<li><a href="#">Teams </a></li>
+							<li><a href="/" class="button" on:click|preventDefault={termspop4}>Contact info</a></li>
+							<li><a href="/">Teams </a></li>
 						</ul>
 					</div>
 
@@ -112,7 +112,7 @@
 						<!-- <div class="ani"></div> -->
 
 						<ul>
-							<li><a href="#" class="button" id="myBtn" on:click={termspop3}>About Us</a></li>
+							<li><a href="/" class="button" id="myBtn" on:click|preventDefault={termspop3}>About Us</a></li>
 							<li><a href="https://www.gcoen.ac.in/" target="_blank">GCOEN</a></li>
 						</ul>
 					</div>
@@ -124,8 +124,8 @@
 						<!-- <div class="ani"></div> -->
 
 						<ul>
-							<li><a href="#" class="button" on:click={termspop}>Terms & Conditions</a></li>
-							<li><a href="#" class="button" on:click={termspop2}>Privacy Policy</a></li>
+							<li><a href="/" class="button" on:click|preventDefault={termspop}>Terms & Conditions</a></li>
+							<li><a href="/" class="button" on:click|preventDefault={termspop2}>Privacy Policy</a></li>
 						</ul>
 					</div>
 
@@ -215,7 +215,7 @@
 						</div>
 					</div>
 				</div>
-				<button value="close" class="close" on:click={_termspop4}> Close </button>
+				<button value="close" class="close" on:click|preventDefault={_termspop4}> Close </button>
 			</div>
 		</div>
 	</div>
@@ -226,7 +226,7 @@
 			<div class="container113" style="text-align: center">
 				<div class="row">
 					<img
-						src="gcoen_logo.png"
+						src="/favicon.png"
 						style="
                     width: 30%;
                     height: 30%;
@@ -261,7 +261,7 @@
 						<br />
 					</p>
 				</div>
-				<button value="close" class="close" on:click={_termspop3}> Close </button>
+				<button value="close" class="close" on:click|preventDefault={_termspop3}> Close </button>
 			</div>
 		</div>
 	</div>
@@ -294,7 +294,7 @@
 					per their norms. This policy applies in perpetuity.
 				</li>
 			</ol>
-			<button value="close" class="close" on:click={_termspop}> Close </button>
+			<button value="close" class="close" on:click|preventDefault={_termspop}> Close </button>
 		</div>
 	</div>
 
@@ -333,7 +333,7 @@
 					responsible for the same.
 				</li>
 			</ol>
-			<button value="close" class="close" on:click={_termspop2}> Close </button>
+			<button value="close" class="close" on:click|preventDefault={_termspop2}> Close </button>
 		</div>
 	</div>
 </div>

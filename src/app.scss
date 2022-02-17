@@ -1,3 +1,5 @@
+/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
+
 /* PostCSS Syntax */
 
 @font-face {
@@ -5,8 +7,7 @@
     font-style: normal;
     font-weight: 200;
     font-display: swap;
-    src: url('/fonts/nunito-v20-latin-200.woff2') format('woff2'),
-        url('/fonts/nunito-v20-latin-200.woff') format('woff');
+    src: url('/fonts/nunito-v20-latin-200.woff2') format('woff2'), url('/fonts/nunito-v20-latin-200.woff') format('woff');
 }
 /* nunito-300 - latin */
 @font-face {
@@ -14,8 +15,7 @@
     font-style: normal;
     font-weight: 300;
     font-display: swap;
-    src: url('/fonts/nunito-v20-latin-300.woff2') format('woff2'),
-        url('/fonts/nunito-v20-latin-300.woff') format('woff');
+    src: url('/fonts/nunito-v20-latin-300.woff2') format('woff2'), url('/fonts/nunito-v20-latin-300.woff') format('woff');
 }
 /* nunito-500 - latin */
 @font-face {
@@ -23,8 +23,7 @@
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url('/fonts/nunito-v20-latin-500.woff2') format('woff2'),
-        url('/fonts/nunito-v20-latin-500.woff') format('woff');
+    src: url('/fonts/nunito-v20-latin-500.woff2') format('woff2'), url('/fonts/nunito-v20-latin-500.woff') format('woff');
 }
 /* nunito-regular - latin */
 @font-face {
@@ -32,8 +31,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('/fonts/nunito-v20-latin-regular.woff2') format('woff2'),
-        url('/fonts/nunito-v20-latin-regular.woff') format('woff');
+    src: url('/fonts/nunito-v20-latin-regular.woff2') format('woff2'), url('/fonts/nunito-v20-latin-regular.woff') format('woff');
 }
 /* nunito-600 - latin */
 @font-face {
@@ -41,8 +39,7 @@
     font-style: normal;
     font-weight: 600;
     font-display: swap;
-    src: url('/fonts/nunito-v20-latin-600.woff2') format('woff2'),
-        url('/fonts/nunito-v20-latin-600.woff') format('woff');
+    src: url('/fonts/nunito-v20-latin-600.woff2') format('woff2'), url('/fonts/nunito-v20-latin-600.woff') format('woff');
 }
 /* nunito-700 - latin */
 @font-face {
@@ -50,8 +47,7 @@
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url('/fonts/nunito-v20-latin-700.woff2') format('woff2'),
-        url('/fonts/nunito-v20-latin-700.woff') format('woff');
+    src: url('/fonts/nunito-v20-latin-700.woff2') format('woff2'), url('/fonts/nunito-v20-latin-700.woff') format('woff');
 }
 /* nunito-800 - latin */
 @font-face {
@@ -59,8 +55,7 @@
     font-style: normal;
     font-weight: 800;
     font-display: swap;
-    src: url('/fonts/nunito-v20-latin-800.woff2') format('woff2'),
-        url('/fonts/nunito-v20-latin-800.woff') format('woff');
+    src: url('/fonts/nunito-v20-latin-800.woff2') format('woff2'), url('/fonts/nunito-v20-latin-800.woff') format('woff');
 }
 /* nunito-900 - latin */
 @font-face {
@@ -68,8 +63,7 @@
     font-style: normal;
     font-weight: 900;
     font-display: swap;
-    src: url('/fonts/nunito-v20-latin-900.woff2') format('woff2'),
-        url('/fonts/nunito-v20-latin-900.woff') format('woff');
+    src: url('/fonts/nunito-v20-latin-900.woff2') format('woff2'), url('/fonts/nunito-v20-latin-900.woff') format('woff');
 }
 
 * {
@@ -83,6 +77,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -ms-overflow-style: none;
+    /* postcss-ignore */
     scrollbar-width: none;
 }
 

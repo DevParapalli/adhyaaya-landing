@@ -1,6 +1,10 @@
 {
-	"useTabs": true,
-	"singleQuote": true,
-	"trailingComma": "none",
-	"printWidth": 100
+    "useTabs": false,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "printWidth": 200,
+    "htmlWhitespaceSensitivity": "ignore",
+    "endOfLine": "crlf",
+    "svelteStrictMode": true
 }
