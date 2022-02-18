@@ -1,5 +1,5 @@
-invisible = 'invisible'
-visible_1 = 'opacity-25 -translate-y-4'
+invisible = 'tw-invisible'
+visible_1 = 'tw-opacity-25 -translate-y-4'
 visible_2 = 'opacity-50 -translate-y-2'
 visible_3 = 'opacity-75 -translate-y-1'
 visible_4 = 'opacity-100 transform-none'
