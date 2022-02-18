@@ -5,13 +5,13 @@
 
 <nav class="nav">
     <div class="items-container">
-        <a href="/" class="flex rounded-2xl border ml-1 btn btn-ghost btn-lg">
-            <img src="/favicon.png" class="m-2 w-20" alt="adhyaaya-logo" />
+        <a href="/" class="logo-button btn btn-ghost btn-lg">
+            <img src="/favicon.png" class="adhyaaya-logo" alt="adhyaaya-logo" />
         </a>
-        <div class="flex items-center md:order-2">
+        <div class="dropdown-container">
             <!-- Dropdown menu -->
-            <div class="dropdown-end dropdown visible md:invisible">
-                <div tabindex="0" class="btn btn-ghost m-1">
+            <div class="dropdown-end dropdown">
+                <div tabindex="0" class="dropdown-icon btn btn-ghost m-1">
                     <Icon class="{`h-8 w-8`}" icon="{roundMenu}" />
                 </div>
                 <ul tabindex="0" class="dropdown-content menu rounded-box w-52 bg-base-300 p-2 shadow">
@@ -34,29 +34,29 @@
                 </ul>
             </div>
         </div>
-        <div class="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto" id="mobile-menu-2">
-            <ul class="mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium">
+        <div class="links-container" id="mobile-menu-2">
+            <ul class="links-list">
                 <li>
-                    <a href="/" class="block bg-transparent py-2 pr-4 pl-3 text-gray-400 transition-colors duration-150 hover:text-white" aria-current="page">Home</a>
+                    <a href="/" class="link" aria-current="page">Home</a>
                 </li>
                 <li>
-                    <a href="/event/events" class="block bg-transparent py-2 pr-4 pl-3 text-gray-400 transition-colors duration-150 hover:text-white">Events</a>
+                    <a href="/event/events" class="link">Events</a>
                 </li>
                 <li>
-                    <a href="/event/sponsors" class="block bg-transparent py-2 pr-4 pl-3 text-gray-400 transition-colors duration-150 hover:text-white">Sponsors</a>
+                    <a href="/event/sponsors" class="link">Sponsors</a>
                 </li>
                 <li>
-                    <a href="/event/gallery" class="block bg-transparent py-2 pr-4 pl-3 text-gray-400 transition-colors duration-150 hover:text-white">Gallery</a>
+                    <a href="/event/gallery" class="link">Gallery</a>
                 </li>
                 <li>
-                    <a href="/event/register" class="block bg-transparent py-2 pr-4 pl-3 text-gray-400 transition-colors duration-150 hover:text-white">Register</a>
+                    <a href="/event/register" class="link">Register</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<style>
+<style lang="scss">
     .nav {
         position: sticky;
         top: 0;
@@ -89,5 +89,73 @@
         display: flex;
         border-radius: 1rem;
         border-width: 1px;
+        max-width: 5rem;
+    }
+    .adhyaaya-logo {
+        max-width: 5rem;
+    }
+    .dropdown-container {
+        display: flex;
+        display: flex;
+        align-items: center;
+
+        @media (min-width: 768px) {
+            order: 2;
+        }
+    }
+    .links-container {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        @media (min-width: 768px) {
+            display: flex;
+            display: flex;
+            order: 1;
+            width: auto;
+        }
+    }
+
+    .links-list {
+        display: flex;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 768px) {
+            margin-top: 0;
+            margin-left: 2rem;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            font-weight: 500;
+            flex-direction: row;
+        }
+    }
+
+    .link {
+        display: block;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.75rem;
+        padding-right: 1rem;
+        background-color: transparent;
+        transition-property: background-color, border-color, color, fill, stroke;
+        transition-duration: 150ms;
+        color: #9ca3af;
+    }
+    .dropdown {
+        visibility: visible;
+
+        @media (min-width: 768px) {
+            visibility: hidden;
+        }
+    }
+
+    .dropdown-end {
+    }
+
+    .dropdown-icon {
+        margin: 0.25rem;
     }
 </style>
